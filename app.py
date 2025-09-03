@@ -81,7 +81,7 @@ tabs = st.tabs([
 
 # ===== Tab: Chatbot =====
 with tabs[0]:
-    st.subheader("🤖 Chatbot Mentor AI")
+    st.subheader("🤖 Chatbot Mentor Bot + AI")
     st.markdown("""
         Tanya jawab interaktif tentang blockchain, smart contract, dan Web3.
     """)
@@ -91,19 +91,14 @@ with tabs[0]:
         st.session_state.chat_widget = "TawkTo"  # default
 
     widget_opt = st.radio(
-        " ", ["ArtiBot", "TawkTo", "ChatBase", "Botsonic", "Denser", "Cortex", "AI"],
+        " ", ["Bot", "AI"],
         horizontal=True, label_visibility="collapsed",
-        index=["ArtiBot","TawkTo","ChatBase","Botsonic","Denser","Cortex","AI"].index(st.session_state.chat_widget),
+        index=["ArtiBot","AI"].index(st.session_state.chat_widget),
         key="chat_widget"
     )
 
     URLS = {
         "ArtiBot": "https://my.artibot.ai/islamichat",
-        "TawkTo": "https://tawk.to/chat/63f1709c4247f20fefe15b12/1gpjhvpnb",
-        "ChatBase": "https://www.chatbase.co/chatbot-iframe/Ho6CMtS7y0t5oM-Ktx9jU",
-        "Botsonic": "https://bot.writesonic.com/share/bot/a148b878-259e-4591-858a-8869b9b23604",
-        "Denser": "https://denser.ai/u/embed/chatbot_pbix8pdjxk9brvund1afv",
-        "Cortex": "https://zenoembed.textcortex.com/?embed_id=emb_01k489emhkefvvsnhpxpqjtc7s",
         "AI": "https://learn3ai.vercel.app/"
     }
     chosen_url = URLS[widget_opt]

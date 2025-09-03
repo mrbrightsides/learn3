@@ -35,6 +35,12 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
   
 ---
 
+## 🖼️ Preview
+
+<img width="1933" height="970" alt="Screenshot 2025-09-04 031356" src="https://github.com/user-attachments/assets/5f498722-6f77-49ca-809d-23e04225a01d" />
+
+---
+
 ## 📚 Struktur Dataset
 
 ```mermaid

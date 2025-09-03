@@ -7,10 +7,10 @@
 
 **Learn3** adalah platform edukasi interaktif untuk memahami **Blockchain & Web3** secara bertahap (Beginner → Intermediate → Advanced).  
 Didesain sebagai **AI-powered learning gateway**, Learn3 menggabungkan:  
-- 📚 Dataset kurasi (Markdown & Quiz)  
-- 🤖 Chatbot mentor interaktif (Flowise + Vercel AI Gateway)  
-- 🎧 Audio Lesson on-demand  
-- 🛠️ Case Study nyata dengan **STC Ecosystem**  
+- 📚 Dataset kurasi (Markdown & Quiz)
+- 🤖 Chatbot mentor interaktif (Flowise + Vercel AI Gateway)
+- 🎧🎥 Multi-format learning di **Blockchain 101** (teks + audio on-demand + video intro)
+- 🧪 Case study nyata dengan **STC Ecosystem**
 
 ---
 
@@ -22,12 +22,17 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
 
 ## 🧩 Modul Utama
 
-1. **Chatbot Mentor** → QnA interaktif berbasis dataset.  
-2. **Learn3 Library** → dokumentasi modul (Markdown viewer).  
-3. **Quiz & Certification** → soal singkat + badge/NFT setelah lulus.  
-4. **Audio Lesson** → generate TTS on-demand dari dataset.  
-5. **Weekly Insight** → rangkuman tren Web3, bisa diputar sebagai audio.  
-
+1. **Chatbot Mentor AI 🤖** — QnA interaktif berbasis dataset (Beginner → Advanced).
+2. **Blockchain 101 📖🎧🎥** — konsep dasar + **Audio Lesson on-demand** + **Video intro**.
+3. **Token & NFT Lab 🎨** — eksperimen ERC-20 & NFT di testnet (contoh: STC Token).
+4. **DAO Playground 🗳** — simulasi governance & voting proposal.
+5. **DeFi Workshop 💱** — AMM/Uniswap, liquidity pool, staking (skenario testnet).
+6. **Smart Contract Studio ⚒️** — tulis & deploy kontrak (Remix/Hardhat, OpenZeppelin).
+7. **Security & Audit 🔐** — reentrancy, best-practice, tools audit (case: STC Converter).
+8. **Gas & Performance ⚡** — optimasi gas & benchmarking (case: STC GasVision & STC Bench).
+9. **AI × Web3 Lab 🤖🔗** — integrasi agent/analytics (case: STC Analytics).
+10. **Certification & NFT Badge 🎓** — quiz, evaluasi, **NFT badge** *Powered by STC*.
+  
 ---
 
 ## 📚 Struktur Dataset

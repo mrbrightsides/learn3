@@ -46,12 +46,6 @@ from components.live_tv import render_live_tv_tab
 # ===== Komponen: Chat Ustadz =====
 from components.chat_ustadz import show_chat_ustadz_tab
 
-# ===== Komponen: Hafalan =====
-from components.tab_hafalan_audio import show_hafalan_audio_tab
-
-# ===== Komponen: Zikir =====
-from components.zikir import show_zikir_tab
-
 # ===== Page setup =====
 st.set_page_config(
     page_title="Learn3",
@@ -82,9 +76,7 @@ tabs = st.tabs([
     "🔐 Security & Audit",
     "⚡ Gas & Performance",
     "🔗 AI × Web3 Lab",
-    "🎓 Certification & NFT Badge",
-    "🎧 Audio Lesson",
-    "🎥 Video Tutorial"
+    "🎓 Certification & NFT Badge"
 ])
 
 # ===== Tab: Chatbot =====
@@ -200,11 +192,3 @@ with tabs[8]:
 # === Tab 9: Chat Ustadz ===
 with tabs[9]:
     show_chat_ustadz_tab()
-
-# === Tab 10: Hafalan ===
-with tabs[10]:
-    show_hafalan_audio_tab()
-
-# === Tab 11: Zikir ===
-with tabs[11]:
-    show_zikir_tab()

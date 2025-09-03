@@ -70,9 +70,45 @@ flowchart LR
 Learn3 menyelipkan **STC Ecosystem** sebagai **case study nyata**, tanpa hard-selling:  
 - **Beginner** → contoh token & NFT menggunakan *STC Token* (testnet).  
 - **Intermediate** → praktik DAO & benchmarking → *STC Bench*, *STC Converter*.  
-- **Advanced** → security & gas optimization → *STC GasVision*, *STC Analytics*.  
+- **Advanced** → security & gas optimization → *STC GasVision*, *STC Analytics*.
 
-Dengan cara ini, user **belajar Web3** sekaligus kenal ekosistem STC secara natural.  
+```mermaid
+flowchart LR
+  U["Learners (Web/Mobile)"] --> S["Learn3 (Streamlit UI)"]
+
+  S --> M["Module Router (10 Modules)"]
+  S --> R["Datasets (Markdown & Quiz)"]
+  S --> GW["Learn3 AI Gateway (Vercel)"]
+
+  %% Modules
+  M --> B101["Blockchain 101 (text + audio + video)"]
+  M --> TL["Token & NFT Lab"]
+  M --> DAO["DAO Playground"]
+  M --> DeFi["DeFi Workshop"]
+  M --> SC["Smart Contract Studio"]
+  M --> Sec["Security & Audit"]
+  M --> Gas["Gas & Performance"]
+  M --> AI["AI × Web3 Lab"]
+  M --> Cert["Certification & NFT Badge"]
+
+  %% AI Gateway & Flowise
+  GW <--> F["Flowise (RAG/Orchestration)"]
+  F --> KB["Vector Store (from Datasets)"]
+  GW <--> LLM["LLM Providers (OpenAI / Anthropic / Groq)"]
+
+  %% Audio on-demand inside Blockchain 101
+  B101 --> TTS["TTS Service (on-demand)"]
+  TTS --> U
+
+  %% STC integrations as case studies
+  Gas --> GasV["STC GasVision"]
+  Sec --> Conv["STC Converter"]
+  DeFi --> Bench["STC Bench"]
+  AI  --> Analyt["STC Analytics"]
+
+  %% Optional temporary cache for audio
+  TTS -. optional cache .-> Store["Temporary Storage (Supabase Signed URL)"]
+```
 
 ---
 

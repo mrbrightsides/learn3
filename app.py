@@ -52,13 +52,10 @@ from components.tab_hafalan_audio import show_hafalan_audio_tab
 # ===== Komponen: Zikir =====
 from components.zikir import show_zikir_tab
 
-# ===== Komponen: Doa Harian =====
-from components.doa_harian import show_doa_harian
-
 # ===== Page setup =====
 st.set_page_config(
-    page_title="SmartFaith",
-    page_icon="🕋",
+    page_title="Learn3",
+    page_icon="🚀",
     layout="wide"
 )
 
@@ -69,33 +66,32 @@ with col1:
     st.image(LOGO_URL, use_container_width=True)
 with col2:
     st.markdown("""
-        ## SmartFaith 🕌
+        ## Learn3 🌍
     """)
 
-st.caption("Asisten Islami Berbasis AI: Tanya Jawab, Generator Khutbah, & Setor Hafalan")
+st.caption("Learn. Build. Connect — Web3 Education powered by Real-World Tools (STC Ecosystem)")
 
 # ===== Tab utama =====
 tabs = st.tabs([
     "🤖 Chatbot", 
-    "🕌 Waktu Sholat",
-    "📻 Murottal Quran",
-    "📖 Quran",
-    "🧮 Kalkulator Zakat",
-    "🗺️ Masjid Terdekat",
-    "🗓️ Event Islam",
-    "🗣️ KhutbahGPT",
-    "📺 Live TV",
-    "📞 Chat Ustadz",
-    "🎙️ Setor Hafalan",
-    "🧿 Zikir",
-    "📚 Doa Harian"
+    "📖 Blockchain 101",
+    "🎨 Token & NFT Lab",
+    "🗳 DAO Playground",
+    "💱 DeFi Workshop",
+    "⚒️ Smart Contract Studio",
+    "🔐 Security & Audit",
+    "⚡ Gas & Performance",
+    "🔗 AI × Web3 Lab",
+    "🎓 Certification & NFT Badge",
+    "🎧 Audio Lesson",
+    "🎥 Video Tutorial"
 ])
 
 # ===== Tab: Chatbot =====
 with tabs[0]:
-    st.subheader("🤖 Chatbot Islami")
+    st.subheader("🤖 Chatbot Mentor AI")
     st.markdown("""
-        Silakan pilih beragam pilihan widget chatbot sesuai kebutuhan Anda:
+        Tanya jawab interaktif tentang blockchain, smart contract, dan Web3.
     """)
 
     # --- Persist pilihan widget
@@ -212,7 +208,3 @@ with tabs[10]:
 # === Tab 11: Zikir ===
 with tabs[11]:
     show_zikir_tab()
-
-# === Tab 12: Doa Harian ===
-with tabs[12]:
-    show_doa_harian()

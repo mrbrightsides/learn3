@@ -88,17 +88,17 @@ with tabs[0]:
 
     # --- Persist pilihan widget
     if "chat_widget" not in st.session_state:
-        st.session_state.chat_widget = "TawkTo"  # default
+        st.session_state.chat_widget = "Bot"  # default
 
     widget_opt = st.radio(
         " ", ["Bot", "AI"],
         horizontal=True, label_visibility="collapsed",
-        index=["ArtiBot","AI"].index(st.session_state.chat_widget),
+        index=["Bot","AI"].index(st.session_state.chat_widget),
         key="chat_widget"
     )
 
     URLS = {
-        "ArtiBot": "https://my.artibot.ai/islamichat",
+        "Bot": "https://my.artibot.ai/islamichat",
         "AI": "https://learn3ai.vercel.app/"
     }
     chosen_url = URLS[widget_opt]

@@ -37,7 +37,7 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
 
 ## 🖼️ Preview
 
-<img width="1933" height="970" alt="Screenshot 2025-09-04 031356" src="https://github.com/user-attachments/assets/5f498722-6f77-49ca-809d-23e04225a01d" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/0f2832f4-6a83-4dc3-8841-0006e39dc901" />
 
 ---
 

@@ -35,6 +35,54 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
   
 ---
 
+## 🌐 Learn3 — Web3 Learning Flow
+
+### 1. Web3 Bot + Tutor (Level-Based Q&A)
+
+🟢 Beginner → Apa itu blockchain, wallet, private key, transaksi, gas fee.
+
+🟡 Intermediate → Smart contract, governance, bridging, basic DeFi.
+
+🔴 Advance → Account abstraction, rollups, zk-tech, modular blockchain.
+
+### 2. Simulators (Hands-On Experience)
+
+🗳️ DAO Voter Simulator → Latihan voting proposal, memahami pro-kontra & dampak treasury.
+
+💧 LP Simulator → Simulasi jadi Liquidity Provider, hitung risiko IL vs Fee, strategi CLMM.
+
+### 3. BlockChat (General Knowledge)
+
+- Tanya jawab cepat seputar:
+
+- Bitcoin & Ethereum
+
+- Wallet & transaksi
+
+- Mining & konsensus
+
+- Smart contract dasar
+
+### 4. Research & Future Trends (Exploration Mode)
+
+- Eksplorasi topik cutting-edge:
+
+- Modular blockchain
+
+- MEV (Maximal Extractable Value)
+
+- zkML (zero-knowledge + machine learning)
+
+- Mode riset mendalam dengan referensi akademik & tren terbaru.
+
+### 5. AI Gateway (Free Exploration)
+
+- Akses ke banyak model AI (GPT, Claude, Gemini, Llama, dll).
+
+- Bisa tanya bebas seputar Web3, riset, coding smart contract, bahkan tren pasar.
+
+---
+
 ## 🖼️ Preview
 
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/0f2832f4-6a83-4dc3-8841-0006e39dc901" />

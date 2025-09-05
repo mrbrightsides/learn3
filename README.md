@@ -81,6 +81,14 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
 
 - Bisa tanya bebas seputar Web3, riset, coding smart contract, bahkan tren pasar.
 
+```mermaid
+flowchart TD
+    A["📘 Belajar Dasar (Bot + Tutor)"] --> B["🧪 Latihan (Simulators)"]
+    B --> C["💬 Tanya Cepat (BlockChat)"]
+    C --> D["🔬 Eksplorasi Lanjut (Research)"]
+    D --> E["🌐 Bebas Tanya (AI Gateway)"]
+```
+
 ---
 
 ## 🖼️ Preview

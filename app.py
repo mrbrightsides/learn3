@@ -84,6 +84,7 @@ with tabs[0]:
     st.subheader("🤖 Chatbot Mentor Bot + AI")
     st.markdown("""
         Tanya jawab interaktif tentang blockchain, smart contract, dan Web3. Pilih sesuai kebutuhan Anda.
+        Belajar dasar (Bot + Tutor) → Latihan (Simulators) → Tanya cepat (BlockChat) → Eksplorasi lanjut (Research) → Bebas tanya (AI Gateway).
     """)
 
     # --- Persist pilihan widget

@@ -83,23 +83,28 @@ tabs = st.tabs([
 with tabs[0]:
     st.subheader("🤖 Chatbot Mentor Bot + AI")
     st.markdown("""
-        Tanya jawab interaktif tentang blockchain, smart contract, dan Web3.
+        Tanya jawab interaktif tentang blockchain, smart contract, dan Web3. Pilih sesuai kebutuhan Anda.
     """)
 
     # --- Persist pilihan widget
     if "chat_widget" not in st.session_state:
-        st.session_state.chat_widget = "Bot"  # default
+        st.session_state.chat_widget = "BlockBot"  # default
 
     widget_opt = st.radio(
-        " ", ["Bot", "AI"],
+        " ", ["BlockBot", "Web3 Tutor", "DAO Voter Simulator", "LP Simulator", "BlockChat", "Research", "AI Gateway"],
         horizontal=True, label_visibility="collapsed",
-        index=["Bot","AI"].index(st.session_state.chat_widget),
+        index=["BlockBot","Web3 Tutor","DAO Voter Simulator","LP Simulator","BlockChat","Research","AI Gateway"].index(st.session_state.chat_widget),
         key="chat_widget"
     )
 
     URLS = {
-        "Bot": "https://my.artibot.ai/islamichat",
-        "AI": "https://learn3ai.vercel.app/"
+        "BlockBot": "https://my.artibot.ai/learn3bot",
+        "Web3 Tutor": "https://www.chatbase.co/chatbot-iframe/RIURX1Atx537tDeYNcw8R",
+        "DAO Voter Simulator": "https://tawk.to/chat/68ba6085721af15d8752fbc5/1j4c0i358",
+        "LP Simulator": "https://denser.ai/u/embed/chatbot_o90yjz0cba1ymfmzi2nwr",
+        "BlockChat": "https://bot.writesonic.com/share/bot/a148b878-259e-4591-858a-8869b9b23604",
+        "Research": "https://zenoembed.textcortex.com/?embed_id=emb_01k4cfh76fehtte5jgmy3atz69",
+        "AI Gateway": "https://learn3ai.vercel.app/"
     }
     chosen_url = URLS[widget_opt]
 

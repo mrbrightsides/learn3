@@ -84,26 +84,29 @@ with tabs[0]:
     st.subheader("🤖 Chatbot Mentor Bot + AI")
     st.markdown("""
         Tanya jawab interaktif tentang blockchain, smart contract, dan Web3. Pilih sesuai kebutuhan Anda.
-        Belajar dasar (Bot + Tutor) → Latihan (Simulators) → Tanya cepat (BlockChat) → Eksplorasi lanjut (Research) → Bebas tanya (AI Gateway).
     """)
-
+    st.markdown("""
+        Belajar dasar (Bot + Chat + Tutor) → Latihan (Simulators) → Quiz → Eksplorasi lanjut (Research) → Bebas tanya (AI Gateway).
+    """)
+    
     # --- Persist pilihan widget
     if "chat_widget" not in st.session_state:
         st.session_state.chat_widget = "BlockBot"  # default
 
     widget_opt = st.radio(
-        " ", ["BlockBot", "Web3 Tutor", "DAO Voter Simulator", "LP Simulator", "BlockChat", "Research", "AI Gateway"],
+        " ", ["BlockBot", "BlockChat", "BlockTutor", "DAO Voter Simulator", "LP Simulator", "Quiz", "Research", "AI Gateway"],
         horizontal=True, label_visibility="collapsed",
-        index=["BlockBot","Web3 Tutor","DAO Voter Simulator","LP Simulator","BlockChat","Research","AI Gateway"].index(st.session_state.chat_widget),
+        index=["BlockBot","BlockChat","BlockTutor","DAO Voter Simulator","LP Simulator","Quiz","Research","AI Gateway"].index(st.session_state.chat_widget),
         key="chat_widget"
     )
 
     URLS = {
         "BlockBot": "https://my.artibot.ai/learn3bot",
-        "Web3 Tutor": "https://www.chatbase.co/chatbot-iframe/RIURX1Atx537tDeYNcw8R",
+        "BlockChat": "https://bot.writesonic.com/share/bot/a148b878-259e-4591-858a-8869b9b23604",
+        "BlockTutor": "https://www.chatbase.co/chatbot-iframe/RIURX1Atx537tDeYNcw8R",
         "DAO Voter Simulator": "https://tawk.to/chat/68ba6085721af15d8752fbc5/1j4c0i358",
         "LP Simulator": "https://denser.ai/u/embed/chatbot_o90yjz0cba1ymfmzi2nwr",
-        "BlockChat": "https://bot.writesonic.com/share/bot/a148b878-259e-4591-858a-8869b9b23604",
+        "Quiz": "https://revisely.com/quiz/I6JyUb",
         "Research": "https://zenoembed.textcortex.com/?embed_id=emb_01k4cfh76fehtte5jgmy3atz69",
         "AI Gateway": "https://learn3ai.vercel.app/"
     }

@@ -104,7 +104,7 @@ flowchart TD
 
 ## 🖼️ Preview
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/957f5e87-022a-4c86-91a7-5039c7441d1c" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/d303301b-820a-4964-bbad-87dbecdbbe1a" />
 
 ### Certified Educator
 

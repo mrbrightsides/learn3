@@ -8,9 +8,10 @@
 **Learn3** adalah platform edukasi interaktif untuk memahami **Blockchain & Web3** secara bertahap (Beginner → Intermediate → Advanced).  
 Didesain sebagai **AI-powered learning gateway**, Learn3 menggabungkan:  
 - 📚 Dataset kurasi (Markdown & Quiz)
-- 🤖 Chatbot mentor interaktif (Flowise + Vercel AI Gateway)
+- 🤖 Chatbot mentor interaktif (Bot + Vercel AI Gateway)
 - 🎧🎥 Multi-format learning di **Blockchain 101** (teks + audio on-demand + video intro)
-- 🧪 Case study nyata dengan **STC Ecosystem**
+- 🧪 Case study nyata dengan **STC Ecosystem** ([GitHub Repo](https://github.com/mrbrightsides/stc-analytics))
+- 🗳 Sertifikasi dalam bentuk PDF ataupun **NFT**
 
 ---
 
@@ -25,17 +26,17 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
 1. **Chatbot Mentor AI 🤖** — QnA interaktif berbasis dataset (Beginner → Advanced).
 2. **Blockchain 101 📖🎧🎥** — konsep dasar + **Audio Lesson on-demand** + **Video intro**.
 3. **Token & NFT Lab 🎨** — eksperimen ERC-20 & NFT di testnet (contoh: STC Token).
-4. **DAO Playground 🗳** — simulasi governance & voting proposal.
+4. **DAO Playground 🏛** — simulasi governance & voting proposal.
 5. **DeFi Workshop 💱** — AMM/Uniswap, liquidity pool, staking (skenario testnet).
 6. **Smart Contract Studio ⚒️** — tulis & deploy kontrak (Remix/Hardhat, OpenZeppelin).
 7. **Gas & Performance ⚡** — optimasi gas & benchmarking (case: STC GasVision & STC Bench).
 8. **Security & Audit 🔐** — reentrancy, best-practice, tools audit (case: STC Converter & STC Analytics).
-9. **AI × Web3 Lab 🤖🔗** — integrasi agent/analytics (case: STC Analytics).
+9. **AI × Web3 Lab 🧪** — integrasi agent/analytics (case: STC Analytics).
 10. **Certification & NFT Badge 🎓** — quiz, evaluasi, **NFT badge** *Powered by STC*.
 
 ```mermaid
 flowchart TD
-    A["🤖 Chatbot (AI Mentor) Tanya jawab interaktif"] --> B["📘 Blockchain 101 Materi dasar + Audio/Video"]
+    A["🤖 Chatbot (AI Mentor) Tanya jawab interaktif"] --> B["📖 Blockchain 101 Materi dasar + Audio/Video"]
     B --> C["🎨 Token & NFT Lab Buat token & NFT sederhana"]
     C --> D["🏛 DAO Playground Simulasi voting & governance"]
     D --> E["💱 DeFi Workshop LP, swap, lending simulators"]
@@ -53,7 +54,7 @@ flowchart TD
 
 ## 🌐 Learn3 — Web3 Learning Flow
 
-### 1. Web3 Bot + Tutor (Level-Based Q&A)
+### 1. Web3 Bot + Chat + Tutor (Level-Based Q&A)
 
 🟢 Beginner → Apa itu blockchain, wallet, private key, transaksi, gas fee.
 
@@ -67,19 +68,7 @@ flowchart TD
 
 💧 LP Simulator → Simulasi jadi Liquidity Provider, hitung risiko IL vs Fee, strategi CLMM.
 
-### 3. BlockChat (General Knowledge)
-
-- Tanya jawab cepat seputar:
-
-- Bitcoin & Ethereum
-
-- Wallet & transaksi
-
-- Mining & konsensus
-
-- Smart contract dasar
-
-### 4. Research & Future Trends (Exploration Mode)
+### 3. Research & Future Trends (Exploration Mode)
 
 - Eksplorasi topik cutting-edge:
 
@@ -91,6 +80,12 @@ flowchart TD
 
 - Mode riset mendalam dengan referensi akademik & tren terbaru.
 
+### 4. Quiz (Uji pengetahuan kamu)
+
+- 180++ soal
+
+- Tersedia dalam bentuk pilihan ganda, benar atau salah, dan essay
+
 ### 5. AI Gateway (Free Exploration)
 
 - Akses ke banyak model AI (GPT, Claude, Gemini, Llama, dll).
@@ -99,9 +94,9 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A["📘 Belajar Dasar (Bot + Tutor)"] --> B["🧪 Latihan (Simulators)"]
-    B --> C["💬 Tanya Cepat (BlockChat)"]
-    C --> D["🔬 Eksplorasi Lanjut (Research)"]
+    A["📘 Belajar Dasar (Bot + AI + Tutor)"] --> B["🧪 Latihan (Simulators)"]
+    B --> C["🔬 Eksplorasi Lanjut (Research)"]
+    C --> D["📘 Quiz (Uji Kemampuan)"]
     D --> E["🌐 Bebas Tanya (AI Gateway)"]
 ```
 
@@ -109,7 +104,11 @@ flowchart TD
 
 ## 🖼️ Preview
 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/0f2832f4-6a83-4dc3-8841-0006e39dc901" />
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/957f5e87-022a-4c86-91a7-5039c7441d1c" />
+
+### Certified Educator
+
+<img width="2667" height="1667" alt="sertifikat quizizz" src="https://github.com/user-attachments/assets/be9def19-4f6e-4dbe-9ad6-e418c2f955b2" />
 
 ---
 
@@ -191,7 +190,7 @@ flowchart LR
 ---
 
 ## ⚡ Tech Stack
-- **Flowise** → Chatbot engine, dataset connector.  
+- **Multiple AI** → Chatbot engine, dataset connector.  
 - **Vercel AI SDK** → multi-gateway LLM (OpenAI, Claude, Groq, dsb).  
 - **Markdown Dataset** → basis materi belajar.  
 - **On-Demand TTS** → audio lesson (Notebook LM / OpenAI TTS).  
@@ -229,8 +228,8 @@ Akses di browser: http://localhost:3000
 ## 🎓 Roadmap
 - [x] Struktur dataset (Beginner → Advanced).  
 - [x] Draft system prompt Learn3.  
-- [ ] Integrasi chatbot Flowise + Vercel AI.  
-- [ ] Modul Quiz & Certification (NFT badge).  
+- [x] Integrasi chatbot + Vercel AI.  
+- [x] Modul Quiz & Certification (NFT badge).  
 - [ ] Audio lesson on-demand.  
 - [ ] Weekly Insight pipeline.  
 - [ ] Integrasi penuh STC ecosystem.  

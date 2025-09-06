@@ -57,13 +57,13 @@ LOGO_URL = "https://i.imgur.com/qE0KOVM.png"
 
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image(LOGO_URL, use_container_width=True)
+    st.image(LOGO_URL, width=100)
 with col2:
     st.markdown("""
-        ## Learn Web3 with Learn3 🌍
+        # Learn Web3 with Learn3 🌍 ### "Chat. Code. Chain — Your Web3 Journey Starts Here"
     """)
 
-st.caption("Learn. Build. Connect — Web3 Education Platform powered by Real-World Tools (STC Ecosystem)")
+st.caption("💡 Belajar Web3 gak harus kaku. Di Learn3, kamu ngobrol sama bot, main quiz, latihan simulasi DeFi & DAO, sampai bikin smart contract sendiri. Fun kayak nongkrong, serius di hasilnya, dan reward-nya on-chain 🚀")
 
 # ===== Tab utama =====
 tabs = st.tabs([

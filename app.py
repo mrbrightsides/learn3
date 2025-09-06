@@ -53,14 +53,14 @@ st.set_page_config(
     layout="wide"
 )
 
-col1, col2 = st.columns([1, 4])
+col1, col2 = st.columns([3, 1])
 with col1:
     st.markdown("""
         # Learn Web3 with Learn3 🌍
     """)
 with col2:
     st.markdown("""
-        Chat. Code. Chained. Certified — Your Web3 Journey Starts Here
+        ## Chat. Code. Chained. Certified — Your Web3 Journey Starts Here
     """)
 
 st.caption("💡 Belajar Web3 gak harus kaku. Di Learn3, kamu bisa ngobrol sama bot, main quiz, latihan simulasi DeFi & DAO, sampai bikin smart contract sendiri. Fun kayak nongkrong, serius di hasilnya, dan reward-nya on-chain 🚀")

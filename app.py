@@ -53,14 +53,14 @@ st.set_page_config(
     layout="wide"
 )
 
-LOGO_URL = "https://i.imgur.com/HxMVuJ3.png"
+LOGO_URL = "https://i.imgur.com/qE0KOVM.png"
 
 col1, col2 = st.columns([1, 4])
 with col1:
     st.image(LOGO_URL, use_container_width=True)
 with col2:
     st.markdown("""
-        ## Learn3 🌍
+        ## Learn Web3 with Learn3 🌍
     """)
 
 st.caption("Learn. Build. Connect — Web3 Education Platform powered by Real-World Tools (STC Ecosystem)")

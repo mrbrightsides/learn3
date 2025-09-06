@@ -28,10 +28,26 @@ Menjadi **poros pembelajaran Web3** berbasis AI + dataset terbuka, yang bisa dia
 4. **DAO Playground 🗳** — simulasi governance & voting proposal.
 5. **DeFi Workshop 💱** — AMM/Uniswap, liquidity pool, staking (skenario testnet).
 6. **Smart Contract Studio ⚒️** — tulis & deploy kontrak (Remix/Hardhat, OpenZeppelin).
-7. **Security & Audit 🔐** — reentrancy, best-practice, tools audit (case: STC Converter).
-8. **Gas & Performance ⚡** — optimasi gas & benchmarking (case: STC GasVision & STC Bench).
+7. **Gas & Performance ⚡** — optimasi gas & benchmarking (case: STC GasVision & STC Bench).
+8. **Security & Audit 🔐** — reentrancy, best-practice, tools audit (case: STC Converter & STC Analytics).
 9. **AI × Web3 Lab 🤖🔗** — integrasi agent/analytics (case: STC Analytics).
 10. **Certification & NFT Badge 🎓** — quiz, evaluasi, **NFT badge** *Powered by STC*.
+
+```mermaid
+flowchart TD
+    A["🤖 Chatbot (AI Mentor) Tanya jawab interaktif"] --> B["📘 Blockchain 101 Materi dasar + Audio/Video"]
+    B --> C["🎨 Token & NFT Lab Buat token & NFT sederhana"]
+    C --> D["🏛 DAO Playground Simulasi voting & governance"]
+    D --> E["💱 DeFi Workshop LP, swap, lending simulators"]
+    E --> F["💻 Smart Contract Studio Belajar Solidity + contoh"]
+    F --> G["⚡ Gas & Performance STC GasVision + STC Bench"]
+    G --> H["🔒 Security & Audit STC Converter + STC Analytics"]
+    H --> I["🧪 AI × Web3 Lab Build mini Web3 project"]
+    I --> J["🎓 Certification & NFT Badge Sertifikat on-chain"]
+
+    %% Jalur alternatif (skip langsung ke Lab)
+    A -.-> I
+```
   
 ---
 

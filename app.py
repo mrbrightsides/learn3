@@ -131,7 +131,7 @@ tabs = st.tabs([
     "⚡ Gas & Performance",
     "🔐 Audit Security",
     "🔗 Web3 Lab",
-    "🎓 SBT Certification"
+    "🎓 Certification"
 ])
 
 # ===== Tab: Chatbot =====

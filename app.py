@@ -71,7 +71,7 @@ div[data-testid="stMetric"]{
 
 with st.sidebar:
     st.sidebar.markdown("📘 **About**")
-    st.sidebar.markdown("
+    st.sidebar.markdown("""
     Learn3 adalah platform edukasi Web3 interaktif yang dikemas seperti game petualangan. Memadukan AI bot dan mentor, gamifikasi, serta real-world tools dari ekosistem blockchain.
     Kami percaya belajar Web3 bukan sekadar membaca teori, tapi perjalanan interaktif:
 
@@ -81,14 +81,14 @@ with st.sidebar:
     
     - eksplorasi frontier research,
     
-    - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian."
+    - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian."""
 
     ---
     st.sidebar.markdown("📘 **Vision Statement**")
-    st.sidebar.markdown("
+    st.sidebar.markdown("""
     User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
     Setiap langkah terhubung dengan ekosistem STC (GasVision, Bench, Converter, Analytics) untuk pengalaman nyata.
-    Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3."
+    Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3."""
     
     ---
     st.sidebar.markdown("📘 **How to Get the Badges**")

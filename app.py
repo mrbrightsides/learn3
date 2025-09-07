@@ -83,13 +83,13 @@ with st.sidebar:
     
     - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian.""")
 
-    st.sidebar.markdown("📘 **Vision Statement**")
+    st.sidebar.markdown("🔮 **Vision Statement**")
     st.sidebar.markdown("""
     User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
     Setiap langkah terhubung dengan ekosistem STC (GasVision, Bench, Converter, Analytics) untuk pengalaman nyata.
     Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3.""")
     
-    st.sidebar.markdown("📘 **How to Get the Badges**")
+    st.sidebar.markdown("❓ **How to Get the Badges**")
     st.sidebar.markdown("""
     Terdapat 10 Badge di seluruh modul yang ada untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
     

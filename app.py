@@ -81,14 +81,14 @@ with st.sidebar:
     
     - eksplorasi frontier research,
     
-    - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian."""
+    - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian.""")
 
     ---
     st.sidebar.markdown("📘 **Vision Statement**")
     st.sidebar.markdown("""
     User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
     Setiap langkah terhubung dengan ekosistem STC (GasVision, Bench, Converter, Analytics) untuk pengalaman nyata.
-    Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3."""
+    Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3.""")
     
     ---
     st.sidebar.markdown("📘 **How to Get the Badges**")

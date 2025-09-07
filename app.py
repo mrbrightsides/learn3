@@ -87,7 +87,7 @@ with st.sidebar:
     st.sidebar.markdown("""
     User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
     Setiap langkah terhubung dengan ekosistem STC (GasVision, Bench, Converter, Analytics) untuk pengalaman nyata.
-    Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3.""")
+    Di akhir perjalanan, user mendapatkan sertifikat Soul Bound Token eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3.""")
     
     st.sidebar.markdown("❓ **How to Get the Badges**")
     st.sidebar.markdown("""
@@ -131,7 +131,7 @@ tabs = st.tabs([
     "⚡ Gas & Performance",
     "🔐 Audit Security",
     "🔗 Web3 Lab",
-    "🎓 NFT/SBT Certification"
+    "🎓 SBT Certification"
 ])
 
 # ===== Tab: Chatbot =====

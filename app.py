@@ -91,7 +91,7 @@ with st.sidebar:
     
     st.sidebar.markdown("❓ **How to Get the Badges**")
     st.sidebar.markdown("""
-    Terdapat 10 Badge di seluruh modul yang ada untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
+    Terdapat 10 Badge di seluruh modul yang tersebar untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
     
     ---
     #### 🙌 Dukungan & kontributor

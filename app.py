@@ -90,7 +90,7 @@ with st.sidebar:
     Di akhir perjalanan, user mendapatkan sertifikat Soul Bound Token (SBT) eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3.
 
     ---
-    ### ❓ **How to Get the Badges
+    ### ❓ How to Get the Badges
     Terdapat 10 Badge di seluruh modul yang tersebar untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
     
     ---

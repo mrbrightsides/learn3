@@ -46,6 +46,52 @@ from components.live_tv import render_live_tv_tab
 # ===== Komponen: Chat Ustadz =====
 from components.chat_ustadz import show_chat_ustadz_tab
 
+# Quick CSS theme (dark + teal accents)
+st.markdown("""
+<style>
+:root { --accent:#20c997; --accent2:#7c4dff; }
+.block-container { padding-top: 1rem; }
+section[data-testid="stSidebar"] .st-expander { border:1px solid #313131; border-radius:12px; }
+div[data-testid="stMetric"]{
+  background: linear-gradient(135deg, rgba(32,201,151,.08), rgba(124,77,255,.06));
+  border: 1px solid rgba(128,128,128,.15);
+  padding: 12px; border-radius: 12px;
+}
+.stButton>button, .stDownloadButton>button{
+  border-radius:10px; border:1px solid rgba(255,255,255,.15);
+}
+.stTabs [data-baseweb="tab-list"] { gap: 6px; }
+.stTabs [data-baseweb="tab"]{
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px; padding: 6px 12px;
+}
+[data-testid="stHeader"] { background: transparent; }
+</style>
+""", unsafe_allow_html=True)
+
+with st.sidebar:
+    st.sidebar.markdown("📘 **About**")
+    st.sidebar.markdown("""
+    Unggah output dari analisis keamanan file .sol Anda, untuk saat ini masih terbatas untuk hasil dari tools seperti **Mythril** dan **Slither**.
+
+    **Didukung format:**
+    - 🐍 JSON dari **Slither**
+    - 🧠 JSON dari **Mythril**
+    
+    **Output:**
+    - 📄 `swc_findings.csv`
+    - 🧾 `swc_findings.ndjson`
+    
+    Siap untuk diunggah ke [**STC Analytics**](https://stc-analytics.streamlit.app) guna eksplorasi lebih lanjut.
+    
+    ---
+    #### 🙌 Dukungan & kontributor
+    - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/stc-swc/tree/main)
+    - Built with 💙 by [ELPEEF](https://elpeef.com)
+
+    Versi UI: v1.0 • Streamlit • Theme Dark
+    """)
+
 # ===== Page setup =====
 st.set_page_config(
     page_title="Learn3",

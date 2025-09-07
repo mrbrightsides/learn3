@@ -110,6 +110,9 @@ flowchart TD
 
 <img width="2667" height="1667" alt="sertifikat quizizz" src="https://github.com/user-attachments/assets/be9def19-4f6e-4dbe-9ad6-e418c2f955b2" />
 
+
+<img width="1200" height="1200" alt="AI-Badge-NEW" src="https://github.com/user-attachments/assets/f6bab603-91ab-4278-841d-63514dcfc287" />
+
 ---
 
 ## 📚 Struktur Dataset

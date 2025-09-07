@@ -71,23 +71,34 @@ div[data-testid="stMetric"]{
 
 with st.sidebar:
     st.sidebar.markdown("📘 **About**")
-    st.sidebar.markdown("""
-    Unggah output dari analisis keamanan file .sol Anda, untuk saat ini masih terbatas untuk hasil dari tools seperti **Mythril** dan **Slither**.
+    st.sidebar.markdown("
+    Learn3 adalah platform edukasi Web3 interaktif yang dikemas seperti game petualangan. Memadukan AI bot dan mentor, gamifikasi, serta real-world tools dari ekosistem blockchain.
+    Kami percaya belajar Web3 bukan sekadar membaca teori, tapi perjalanan interaktif:
 
-    **Didukung format:**
-    - 🐍 JSON dari **Slither**
-    - 🧠 JSON dari **Mythril**
+    - mulai dari dasar,
     
-    **Output:**
-    - 📄 `swc_findings.csv`
-    - 🧾 `swc_findings.ndjson`
+    - naik level lewat simulasi,
     
-    Siap untuk diunggah ke [**STC Analytics**](https://stc-analytics.streamlit.app) guna eksplorasi lebih lanjut.
+    - eksplorasi frontier research,
+    
+    - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian."
+
+    ---
+    st.sidebar.markdown("📘 **Vision Statement**")
+    st.sidebar.markdown("
+    User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
+    Setiap langkah terhubung dengan ekosistem STC (GasVision, Bench, Converter, Analytics) untuk pengalaman nyata.
+    Di akhir perjalanan, user mendapatkan sertifikat NFT/SBT eksklusif — bukti abadi di blockchain bahwa mereka adalah bagian dari pionir Web3."
+    
+    ---
+    st.sidebar.markdown("📘 **How to Get the Badges**")
+    st.sidebar.markdown("""
+    Terdapat 10 Badge di seluruh modul yang ada untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
     
     ---
     #### 🙌 Dukungan & kontributor
-    - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/stc-swc/tree/main)
-    - Built with 💙 by [ELPEEF](https://elpeef.com)
+    - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
+    - Built with 💙 by [Khudri](https://khudri.elpeef.com)
 
     Versi UI: v1.0 • Streamlit • Theme Dark
     """)
@@ -122,7 +133,7 @@ tabs = st.tabs([
     "⚡ Gas & Performance",
     "🔐 Security & Audit",
     "🔗 AI × Web3 Lab",
-    "🎓 Certification & NFT Badge"
+    "🎓 NFT/SBT Certification"
 ])
 
 # ===== Tab: Chatbot =====

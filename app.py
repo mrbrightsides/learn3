@@ -124,13 +124,13 @@ st.caption(" >💡 Belajar Web3 gak harus kaku. Di Learn3, kamu bisa ngobrol sam
 tabs = st.tabs([
     "🤖 Chatbot", 
     "📖 Blockchain 101",
-    "🎨 Token & NFT Lab",
+    "🎨 Token Lab",
     "🗳 DAO Playground",
     "💱 DeFi Workshop",
     "⚒️ Smart Contract Studio",
     "⚡ Gas & Performance",
-    "🔐 Security & Audit",
-    "🔗 AI × Web3 Lab",
+    "🔐 Audit Security",
+    "🔗 Web3 Lab",
     "🎓 NFT/SBT Certification"
 ])
 

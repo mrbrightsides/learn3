@@ -95,8 +95,9 @@ with st.sidebar:
     
     ---
     ### 🎯 Quiz Leaderboard
-    [Join](https://wayground.com/join?gc=53764642)
-    https://i.imgur.com/v0EGpnx.jpeg
+    Quiz disini bersifat simulasi dan latihan
+    Klik [Join](https://wayground.com/join?gc=53764642) untuk membuka laman quiz yang lengkap dengan leaderbord, progress, nama, dan avatar sendiri.
+    Untuk mengeklaim Badge, masukkan nama dan email saaat mengisi nama peseerta quiz.
 
     ---
     #### 🙌 Dukungan & kontributor

@@ -142,7 +142,7 @@ tabs = st.tabs([
 
 # ===== Tab: Chatbot =====
 with tabs[0]:
-    st.subheader("🤖 Chatbot AI powered Mentor")
+    st.subheader("🤖 Chatbot AI-powered Playground")
     st.markdown("""
         Tanya jawab interaktif tentang blockchain, smart contract, dan Web3. Pilih sesuai kebutuhan kamu.
     """)
@@ -152,7 +152,7 @@ with tabs[0]:
     
     # --- Persist pilihan widget
     if "chat_widget" not in st.session_state:
-        st.session_state.chat_widget = "BlockBot"  # default
+        st.session_state.chat_widget = "BlockTutor"  # default
 
     widget_opt = st.radio(
         " ", ["BlockBot", "BlockChat", "BlockTutor", "DAO Voter Simulator", "LP Simulator", "Quiz", "Research", "AI Gateway"],

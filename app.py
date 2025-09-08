@@ -96,7 +96,7 @@ with st.sidebar:
     ---
     ### 🎯 Quiz Leaderboard
     Quiz disini hanya bersifat simulasi dan latihan. 
-    Klik [join](https://wayground.com/join?gc=53764642) agar kamu bisa simpan progress, isi nama dan avatar sendiri, serta lihat peringkatmu dibanding peserta lainnya. 
+    Klik [join](https://wayground.com/join?gc=53764642) agar kamu bisa simpan progress, isi nama dan avatar sendiri, serta bandingkan peringkatmu dengan peserta lainnya. 
     Untuk mengeklaim Badge, sebaiknya masukkan nama asli disertai dengan email yang valid saaat mengisi nama peserta quiz.
 
     ---

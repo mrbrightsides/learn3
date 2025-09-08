@@ -94,6 +94,11 @@ with st.sidebar:
     Terdapat 10 Badge di seluruh modul yang tersebar untuk didapatkan. Jelajahi modul per modul untuk mencarinya. Kumpulkan minimal 6 Badge maka kamu berhak untuk claim sertifikat 🎓
     
     ---
+    ### 🎯 Quiz Leaderboard
+    [Join](https://wayground.com/join?gc=53764642)
+    https://i.imgur.com/v0EGpnx.jpeg
+
+    ---
     #### 🙌 Dukungan & kontributor
     - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
     - Built with 💙 by [Khudri](https://khudri.elpeef.com)
@@ -161,7 +166,7 @@ with tabs[0]:
         "BlockTutor": "https://www.chatbase.co/chatbot-iframe/RIURX1Atx537tDeYNcw8R",
         "DAO Voter Simulator": "https://tawk.to/chat/68ba6085721af15d8752fbc5/1j4c0i358",
         "LP Simulator": "https://denser.ai/u/embed/chatbot_o90yjz0cba1ymfmzi2nwr",
-        "Quiz": "https://wayground.com/embed/quiz/68bb6d5c1ca00a9af41b931c",
+        "Quiz": "https://wayground.com/embed/quiz/68bb727d3fa528df7533c75e",
         "Research": "https://zenoembed.textcortex.com/?embed_id=emb_01k4cfh76fehtte5jgmy3atz69",
         "AI Gateway": "https://learn3ai.vercel.app/"
     }

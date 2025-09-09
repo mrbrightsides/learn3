@@ -71,8 +71,8 @@ div[data-testid="stMetric"]{
 
 with st.sidebar:
     st.sidebar.image(
-        "https://i.imgur.com/qE0KOVM.png",
-        use_column_width=True
+        "https://i.imgur.com/E5LaGaa.png",
+        use_container_width=True
     )
     st.sidebar.markdown("📘 **About**")
     st.sidebar.markdown("""

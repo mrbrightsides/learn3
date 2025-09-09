@@ -70,6 +70,10 @@ div[data-testid="stMetric"]{
 """, unsafe_allow_html=True)
 
 with st.sidebar:
+    st.sidebar.image(
+        "https://i.imgur.com/qE0KOVM.png",
+        use_column_width=True
+    )
     st.sidebar.markdown("📘 **About**")
     st.sidebar.markdown("""
     Learn3 adalah platform edukasi Web3 interaktif yang dikemas seperti game petualangan. Memadukan AI bot dan mentor, gamifikasi, serta real-world tools dari ekosistem blockchain.

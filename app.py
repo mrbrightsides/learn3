@@ -107,6 +107,11 @@ with st.sidebar:
     #### 🙌 Dukungan & kontributor
     - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
     - Built with 💙 by [Khudri](https://s.id/khudri)
+    - Dukung pengembangan proyek ini melalui: 
+      <a href="https://github.com/sponsors/mrbrightsides" target="_blank">💖 GitHub Sponsors</a> •
+      <a href="https://ko-fi.com/khudri" target="_blank">☕ Ko-fi</a> •
+      <a href="https://www.paypal.com/paypalme/akhmadkhudri" target="_blank">💵 PayPal</a> •
+      <a href="https://trakteer.id/akhmad_khudri" target="_blank">🍵 Trakteer</a>
 
     Versi UI: v1.0 • Streamlit • Theme Dark
     """)

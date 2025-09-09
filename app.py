@@ -106,7 +106,7 @@ with st.sidebar:
     ---
     #### 🙌 Dukungan & kontributor
     - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
-    - Built with 💙 by [Khudri](https://khudri.elpeef.com)
+    - Built with 💙 by [Khudri](https://s.id/khudri)
 
     Versi UI: v1.0 • Streamlit • Theme Dark
     """)

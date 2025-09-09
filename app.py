@@ -108,9 +108,9 @@ with st.sidebar:
     - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
     - Built with 💙 by [Khudri](https://s.id/khudri)
     - Dukung pengembangan proyek ini melalui: 
-      [💖 GitHub Sponsors](https://github.com/sponsors/mrbrightsides)•
-      [☕ Ko-fi](https://ko-fi.com/khudri)•
-      [💵 PayPal](https://www.paypal.com/paypalme/akhmadkhudri)•
+      [💖 GitHub Sponsors](https://github.com/sponsors/mrbrightsides) • 
+      [☕ Ko-fi](https://ko-fi.com/khudri) • 
+      [💵 PayPal](https://www.paypal.com/paypalme/akhmadkhudri) • 
       [🍵 Trakteer](https://trakteer.id/akhmad_khudri)
 
     Versi UI: v1.0 • Streamlit • Theme Dark

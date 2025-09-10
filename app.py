@@ -106,6 +106,15 @@ with st.sidebar:
     Untuk mengeklaim Badge, sebaiknya masukkan nama asli disertai dengan email yang valid saaat mengisi nama peserta quiz.
 
     ---
+    ### 🧩 STC Ecosystem
+    1. [STC Analytics](https://stc-analytics.streamlit.app/)
+    2. [STC GasVision](https://stc-gasvision.streamlit.app/)
+    3. [STC Converter](https://stc-converter.streamlit.app/)
+    4. [STC Bench](https://stc-bench.streamlit.app/)
+    5. [STC Insight](https://stc-insight.streamlit.app/)
+    6. [STC Plugin](https://smartourism.elpeef.com/)
+
+    ---
     #### 🙌 Dukungan & kontributor
     - ⭐ **Star / Fork**: [GitHub repo](https://github.com/mrbrightsides/learn3)
     - Built with 💙 by [Khudri](https://s.id/khudri)

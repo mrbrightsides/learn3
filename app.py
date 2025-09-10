@@ -87,6 +87,8 @@ with st.sidebar:
     
     - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian.
 
+    Showcase dan dokumen ada disini [Doc](https://learn3showcase.vercel.app)
+
     ---
     #### 🔮 Vision Statement
     User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.

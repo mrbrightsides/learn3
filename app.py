@@ -87,8 +87,8 @@ with st.sidebar:
     
     - dan menutup perjalanan dengan reward on-chain sebagai bukti pencapaian.
 
-    Showcase dan dokumen ada disini [Doc](https://learn3showcase.vercel.app)
-
+    Showcase dan dokumentasi ada disini [Doc](https://learn3showcase.vercel.app)
+    
     ---
     #### 🔮 Vision Statement
     User belajar lewat chatbot AI, latihan simulasi DeFi & DAO, eksperimen smart contract, hingga riset cutting-edge seperti zkML.
@@ -134,8 +134,6 @@ with col2:
     st.markdown("""
         ## Chat. Code. Chained. Certified — Your Web3 Journey Starts Here
     """)
-
-st.caption(" >💡 Belajar Web3 gak harus kaku. Di Learn3, kamu bisa ngobrol sama bot, main quiz, latihan simulasi DeFi & DAO, sampai bikin smart contract sendiri. Fun kayak nongkrong, serius di hasilnya, dan reward-nya on-chain 🚀")
 
 # ===== Tab utama =====
 tabs = st.tabs([

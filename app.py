@@ -137,7 +137,7 @@ st.set_page_config(
 col1, col2 = st.columns([2, 2])
 with col1:
     st.markdown("""
-        # Learn Web3 with Learn3 🌍
+        # Learn Web3 with Learn3 🌐
     """)
 with col2:
     st.markdown("""

@@ -287,7 +287,7 @@ with tabs[1]:
 # === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Token Lab"]
-    embed_lab(app["url"], app["title"], hide_px=90)
+    embed_lab(app["url"], app["title"], hide_px=96)
 
 # === Tab 3: Quran ===
 with tabs[3]:

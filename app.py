@@ -13,8 +13,8 @@ import streamlit.components.v1 as components
 # ==== Ohara Miniapps ====
 OHARA_APPS = {
     "Token Lab": {
-        "url": "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec?utm_source=learn3",
-        "title": "🪙 Token Lab"
+        "url": "https://ohara.ai/mini-apps/9df6217d-da52-4ca1-bd3e-6fb5c6bdb981?utm_source=learn3",
+        "title": "🧪 Token Lab"
     }
 }
 
@@ -210,7 +210,7 @@ with col2:
 tabs = st.tabs([
     "🤖 AI Playground", 
     "📖 Blockchain 101",
-    "🪙 Token Lab",
+    "🧪 Token Lab",
     "🗳 DAO Sandbox",
     "💱 DeFi Workshop",
     "⚒️ Smart Contract Studio",

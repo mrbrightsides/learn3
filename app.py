@@ -12,6 +12,10 @@ import streamlit.components.v1 as components
 
 # ==== Ohara Miniapps ====
 OHARA_APPS = {
+    "Blockchain 101": {
+        "url": "https://ohara.ai/mini-apps/c3f9e7ad-c9a7-4b44-8d9e-742fd117f5e6?utm_source=learn3",
+        "title": "📖 Blockchain 101"
+    },
     "Token Lab": {
         "url": "https://ohara.ai/mini-apps/9df6217d-da52-4ca1-bd3e-6fb5c6bdb981?utm_source=learn3",
         "title": "🧪 Token Lab"
@@ -39,6 +43,10 @@ OHARA_APPS = {
     "Web3 Lab": {
         "url": "https://ohara.ai/mini-apps/6a9f756b-573c-442c-9544-792660d7a86a?utm_source=learn3",
         "title": "🔗 Web3 Lab"
+    },
+    "Certification": {
+        "url": "https://ohara.ai/mini-apps/e86a5136-f96f-4d52-af61-8de234ed7686?utm_source=learn3",
+        "title": "🎓 Certification"
     }
 }
 
@@ -95,15 +103,6 @@ def embed_cropped(url: str, hide_px: int = 56, height: int = 720, title: str | N
 
 if st.query_params.get("ping") == "1":
     st.write("ok"); st.stop()
-
-# ===== Komponen: Waktu Sholat =====
-from components.waktu_sholat import (
-    TZ, METHODS, fetch_timings_by_city, parse_today_times,
-    to_local_datetime, next_prayer, fmt_delta
-)
-
-# ===== Komponen: Chat Ustadz =====
-from components.chat_ustadz import show_chat_ustadz_tab
 
 # Quick CSS theme (dark + teal accents)
 st.markdown("""
@@ -267,38 +266,11 @@ with tabs[0]:
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
 
-# === Tab 1: Waktu Sholat ===
+# === Tab 1: Blockchain 101 (iframe ke Ohara) ===
 with tabs[1]:
-    st.subheader("🕌 Waktu Sholat Harian")
-    try:
-        city = st.text_input("Kota", value="Palembang")
-        country = st.text_input("Negara", value="Indonesia")
-        method_name = st.selectbox("Metode perhitungan", list(METHODS.keys()), index=1)
-        method = METHODS[method_name]
-
-        payload = fetch_timings_by_city(city, country, method)
-        date_readable = payload["date"]["readable"]
-        timings = parse_today_times(payload["timings"])
-
-        times_local = {
-            n: to_local_datetime(date_readable, t.split(" ")[0])
-            for n, t in timings.items()
-        }
-
-        st.write(f"📅 **{date_readable}** — Zona: **{TZ.zone}** — Metode: **{method_name}**")
-        rows = [(n, timings[n]) for n in ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"] if n in timings]
-        st.dataframe(pd.DataFrame(rows, columns=["Sholat", "Waktu"]), hide_index=True, use_container_width=True)
-
-        now = dt.datetime.now(TZ)
-        name, tnext = next_prayer(now, times_local)
-        if name:
-            st.success(f"Sholat berikutnya: **{name}** — **{tnext.strftime('%H:%M')}** (≈ {fmt_delta(tnext - now)})")
-            st.caption("Hitung mundur diperbarui saat halaman di-run ulang.")
-        else:
-            st.info("Semua waktu sholat hari ini sudah lewat.")
-    except Exception as e:
-        st.error(f"Gagal mengambil data: {e}")
-
+    app = OHARA_APPS["Blockchain 101"]
+    embed_lab(app["url"], app["title"], hide_px=100)
+]
 # === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Token Lab"]
@@ -334,6 +306,7 @@ with tabs[8]:
     app = OHARA_APPS["Web3 Lab"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 9: Chat Ustadz ===
+# === Tab 9: Certification (iframe ke Ohara) ===
 with tabs[9]:
-    show_chat_ustadz_tab()
+    app = OHARA_APPS["Certification"]
+    embed_lab(app["url"], app["title"], hide_px=100)

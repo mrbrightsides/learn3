@@ -18,25 +18,41 @@ OHARA_APPS = {
     }
 }
 
-def embed_lab(url, title=""):
+import streamlit as st
+import streamlit.components.v1 as components
+
+def embed_lab(url: str, title: str = "", hide_px: int = 72):
+    # crop header Ohara dengan translate ke atas
     st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
+
     components.html(f"""
-      <div id="wrap" style="width:100%;height:100vh;position:relative;">
-        <div id="loader" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:600;opacity:.6">
+      <div id="wrap" style="position:relative;width:100%;height:100vh;overflow:hidden;border-radius:12px;">
+        <div id="loader"
+             style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+                    font-weight:600;opacity:.6">
           Loading module…
         </div>
+
+        <!-- Iframe digeser ke atas sebesar hide_px -->
         <iframe id="ohara" src="{url}"
-          style="width:100%;height:100%;border:0;border-radius:12px;overflow:hidden"></iframe>
+          style="position:absolute; top:-{hide_px}px; left:0;
+                 width:100%; height:calc(100% + {hide_px}px);
+                 border:0; border-radius:12px; overflow:hidden"></iframe>
       </div>
+
       <script>
-        const h = () => {{
+        // Sesuaikan tinggi wrapper dengan viewport (bagus untuk mobile)
+        const fit = () => {{
           const vh = window.innerHeight || document.documentElement.clientHeight;
           document.getElementById('wrap').style.height = (vh - 16) + 'px';
         }};
-        window.addEventListener('resize', h); h();
+        window.addEventListener('resize', fit); fit();
+
+        // Sembunyikan loader setelah iframe siap
         const ifr = document.getElementById('ohara');
         ifr.addEventListener('load', () => {{
-          const l = document.getElementById('loader'); if(l) l.style.display='none';
+          const l = document.getElementById('loader');
+          if (l) l.style.display = 'none';
         }});
       </script>
     """, height=720)
@@ -271,7 +287,7 @@ with tabs[1]:
 # === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Token Lab"]
-    embed_lab(app["url"], app["title"])
+    embed_lab(app["url"], app["title"], hide_px=72)
 
 # === Tab 3: Quran ===
 with tabs[3]:

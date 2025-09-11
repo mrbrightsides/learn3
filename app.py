@@ -30,11 +30,6 @@ from components.masjid import (
     show_nearby_mosques
 )
 
-# ===== Komponen: Murottal =====
-from components.murottal import (
-    RADIO_API, fetch_radios, show_murottal_tab
-)
-
 # ===== Komponen: Khutbah GPT =====
 from components.khutbah_gpt import (
     render_khutbah_form, generate_khutbah, generate_khutbah_gpt
@@ -148,7 +143,7 @@ with col2:
 tabs = st.tabs([
     "🤖 AI Playground", 
     "📖 Blockchain 101",
-    "🎨 Token Lab",
+    "🪙 Token Lab",
     "🗳 DAO Sandbox",
     "💱 DeFi Workshop",
     "⚒️ Smart Contract Studio",
@@ -239,9 +234,12 @@ with tabs[1]:
     except Exception as e:
         st.error(f"Gagal mengambil data: {e}")
 
-# === Tab 2: Murottal ===
+# === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
-    show_murottal_tab()
+    st.markdown("### 🪙 Token Lab")
+    ohara_url = "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec"
+    st.components.v1.iframe(ohara_url, height=800, scrolling=True)
+
 
 # === Tab 3: Quran ===
 with tabs[3]:

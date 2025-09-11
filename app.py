@@ -25,7 +25,7 @@ OHARA_APPS = {
         "title": "💱 DeFi Workshop"
     },
     "Smart Contract Studio": {
-        "url": "https://ohara.ai/mini-apps/89013f2b-5538-4a62-8665-9f98151edb9d?utm_source=learn3",
+        "url": "https://ohara.ai/mini-apps/a39d830d-0696-4eec-a884-e47ed1027e4e?utm_source=learn3",
         "title": "⚒️ Smart Contract Studio"
     }
 }

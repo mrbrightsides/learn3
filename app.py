@@ -17,19 +17,19 @@ OHARA_APPS = {
         "title": "📖 Blockchain 101"
     },
     "Token Lab": {
-        "url": "https://ohara.ai/mini-apps/9df6217d-da52-4ca1-bd3e-6fb5c6bdb981?utm_source=learn3",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmffpcnl10o678nlkgegfgpmn?utm_source=learn3",
         "title": "🧪 Token Lab"
     },
     "DAO Sandbox": {
-        "url": "https://ohara.ai/mini-apps/1c2a4db3-203b-4a53-9f71-411b1b8237c5?utm_source=learn3",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmffptu29011cb3lkcmx6h3co?utm_source=learn3",
         "title": "🗳 DAO Sandbox"
     },
     "DeFi Workshop": {
-        "url": "https://ohara.ai/mini-apps/89013f2b-5538-4a62-8665-9f98151edb9d?utm_source=learn3",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmffqhjpu0173b3lkbvhh7arq?utm_source=learn3",
         "title": "💱 DeFi Workshop"
     },
     "Smart Contract Studio": {
-        "url": "https://ohara.ai/mini-apps/a39d830d-0696-4eec-a884-e47ed1027e4e?utm_source=learn3",
+        "url": "https://ohara.ai/mini-apps/miniapp_cmffs5rj50oz18nlk6ogi2lmp?utm_source=learn3",
         "title": "⚒️ Smart Contract Studio"
     },
     "Gas & Performance": {

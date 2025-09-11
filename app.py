@@ -23,6 +23,10 @@ OHARA_APPS = {
     "DeFi Workshop": {
         "url": "https://ohara.ai/mini-apps/89013f2b-5538-4a62-8665-9f98151edb9d?utm_source=learn3",
         "title": "💱 DeFi Workshop"
+    },
+    "Smart Contract Studio": {
+        "url": "https://ohara.ai/mini-apps/89013f2b-5538-4a62-8665-9f98151edb9d?utm_source=learn3",
+        "title": "⚒️ Smart Contract Studio"
     }
 }
 
@@ -84,11 +88,6 @@ if st.query_params.get("ping") == "1":
 from components.waktu_sholat import (
     TZ, METHODS, fetch_timings_by_city, parse_today_times,
     to_local_datetime, next_prayer, fmt_delta
-)
-
-# ===== Komponen: Masjid Terdekat =====
-from components.masjid import (
-    show_nearby_mosques
 )
 
 # ===== Komponen: Khutbah GPT =====
@@ -311,9 +310,10 @@ with tabs[4]:
     app = OHARA_APPS["DeFi Workshop"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 5: Masjid Terdekat ===
+# === Tab 5: Smart Contract Studio (iframe ke Ohara) ===
 with tabs[5]:
-    show_nearby_mosques()
+    app = OHARA_APPS["Smart Contract Studio"]
+    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 6: Event Islam ===
 with tabs[6]:

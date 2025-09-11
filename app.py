@@ -270,7 +270,7 @@ with tabs[0]:
 with tabs[1]:
     app = OHARA_APPS["Blockchain 101"]
     embed_lab(app["url"], app["title"], hide_px=100)
-]
+
 # === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Token Lab"]

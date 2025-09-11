@@ -57,6 +57,23 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72):
       </script>
     """, height=720)
 
+def embed_cropped(url: str, hide_px: int = 56, height: int = 720, title: str | None = None):
+    """Embed iframe dengan 'crop' area atas setinggi hide_px (untuk menyamarkan header)."""
+    if title:
+        st.markdown(f"### {title}")
+    components.html(
+        f"""
+        <div id="wrap" style="position:relative;width:100%;height:{height}px;overflow:hidden;border-radius:12px;">
+          <iframe
+            src="{url}"
+            style="position:absolute;top:-{hide_px}px;left:0;width:100%;height:{height + hide_px}px;border:0;border-radius:12px;overflow:hidden"
+            scrolling="no"
+          ></iframe>
+        </div>
+        """,
+        height=height,
+    )
+
 if st.query_params.get("ping") == "1":
     st.write("ok"); st.stop()
 
@@ -216,14 +233,15 @@ with tabs[0]:
     # --- Persist pilihan widget
     if "chat_widget" not in st.session_state:
         st.session_state.chat_widget = "BlockTutor"  # default
-
+    
     widget_opt = st.radio(
-        " ", ["BlockBot", "BlockChat", "BlockTutor", "DAO Voter Simulator", "LP Simulator", "Quiz", "Research", "AI Gateway"],
+        " ",
+        ["BlockBot","BlockChat","BlockTutor","DAO Voter Simulator","LP Simulator","Quiz","Research","AI Gateway"],
         horizontal=True, label_visibility="collapsed",
         index=["BlockBot","BlockChat","BlockTutor","DAO Voter Simulator","LP Simulator","Quiz","Research","AI Gateway"].index(st.session_state.chat_widget),
         key="chat_widget"
     )
-
+    
     URLS = {
         "BlockBot": "https://my.artibot.ai/learn3bot",
         "BlockChat": "https://bot.writesonic.com/share/bot/a148b878-259e-4591-858a-8869b9b23604",
@@ -235,22 +253,22 @@ with tabs[0]:
         "AI Gateway": "https://learn3ai.vercel.app/"
     }
     chosen_url = URLS[widget_opt]
-
+    
     cache_bust = st.toggle("Force refresh chat (cache-bust)", value=False)
     final_url = f"{chosen_url}?t={int(time.time())}" if cache_bust else chosen_url
-
+    
     st.write(f"💬 Chat aktif: **{widget_opt}**")
     st.caption("Jika area kosong, kemungkinan dibatasi oleh CSP/X-Frame-Options dari penyedia.")
-
-    iframe(src=final_url, height=720)
-
+    
+    if widget_opt == "BlockChat":
+        # Botsonic: sembunyikan header atas dengan crop ~56px (atur sesuai kebutuhan)
+        embed_cropped(final_url, hide_px=56, height=720, title=None)
+    else:
+        # Widget lain tetap pakai iframe standar
+        iframe(src=final_url, height=720)
+    
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
-        st.markdown(
-            f"""
-            <meta http-equiv="refresh" content="0; url={chosen_url}">
-            """,
-            unsafe_allow_html=True
-        )
+        st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
 
 # === Tab 1: Waktu Sholat ===
 with tabs[1]:

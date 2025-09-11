@@ -31,6 +31,10 @@ OHARA_APPS = {
     "Gas & Performance": {
         "url": "https://ohara.ai/mini-apps/e33686f2-bdec-4043-b683-0fd4507979b2?utm_source=learn3",
         "title": "⚡ Gas & Performance"
+    },
+    "Audit Security": {
+        "url": "https://ohara.ai/mini-apps/0c47e8dd-0310-4bf6-8e02-c97612856385?utm_source=learn3",
+        "title": "🔐 Audit Security"
     }
 }
 
@@ -92,11 +96,6 @@ if st.query_params.get("ping") == "1":
 from components.waktu_sholat import (
     TZ, METHODS, fetch_timings_by_city, parse_today_times,
     to_local_datetime, next_prayer, fmt_delta
-)
-
-# ===== Komponen: Khutbah GPT =====
-from components.khutbah_gpt import (
-    render_khutbah_form, generate_khutbah, generate_khutbah_gpt
 )
 
 # ===== Komponen: Live TV =====
@@ -324,9 +323,10 @@ with tabs[6]:
     app = OHARA_APPS["Gas & Performance"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 7: KhutbahGPT ===
+# === Tab 7: Audit Security (iframe ke Ohara) ===
 with tabs[7]:
-    render_khutbah_form()
+    app = OHARA_APPS["Audit Security"]
+    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 8: Live TV ===
 with tabs[8]:

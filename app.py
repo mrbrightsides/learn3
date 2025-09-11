@@ -304,7 +304,7 @@ with tabs[2]:
     embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 3: DAO Sandbox (iframe ke Ohara) ===
-with tabs[2]:
+with tabs[3]:
     app = OHARA_APPS["DAO Sandbox"]
     embed_lab(app["url"], app["title"], hide_px=100)
 

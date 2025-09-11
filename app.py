@@ -19,6 +19,10 @@ OHARA_APPS = {
     "DAO Sandbox": {
         "url": "https://ohara.ai/mini-apps/1c2a4db3-203b-4a53-9f71-411b1b8237c5?utm_source=learn3",
         "title": "🗳 DAO Sandbox"
+    },
+    "DeFi Workshop": {
+        "url": "https://ohara.ai/mini-apps/89013f2b-5538-4a62-8665-9f98151edb9d?utm_source=learn3",
+        "title": "💱 DeFi Workshop"
     }
 }
 
@@ -80,12 +84,6 @@ if st.query_params.get("ping") == "1":
 from components.waktu_sholat import (
     TZ, METHODS, fetch_timings_by_city, parse_today_times,
     to_local_datetime, next_prayer, fmt_delta
-)
-
-# ===== Komponen: Zakat =====
-from components.zakat import (
-    zakat_kalkulator, OZT_TO_GRAM,
-    fetch_gold_price_idr_per_gram, format_rp, nisab_emas_idr
 )
 
 # ===== Komponen: Masjid Terdekat =====
@@ -308,9 +306,10 @@ with tabs[3]:
     app = OHARA_APPS["DAO Sandbox"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 4: Kalkulator Zakat ===
+# === Tab 4: DeFi Workshop (iframe ke Ohara) ===
 with tabs[4]:
-    zakat_kalkulator()
+    app = OHARA_APPS["DeFi Workshop"]
+    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 5: Masjid Terdekat ===
 with tabs[5]:

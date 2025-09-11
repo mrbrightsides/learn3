@@ -21,7 +21,7 @@ OHARA_APPS = {
 import streamlit as st
 import streamlit.components.v1 as components
 
-def embed_lab(url: str, title: str = "", hide_px: int = 72):
+def embed_lab(url: str, title: str = "", hide_px: int = 72, height_px: int = 1040):
     st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
 
     components.html(f"""
@@ -39,12 +39,14 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72):
       </div>
 
       <script>
+        // Fit tinggi wrapper ke viewport (minus margin kecil)
         const fit = () => {{
           const vh = window.innerHeight || document.documentElement.clientHeight;
           document.getElementById('wrap').style.height = (vh - 16) + 'px';
         }};
         window.addEventListener('resize', fit); fit();
 
+        // Loader fade-out saat iframe ready
         const ifr = document.getElementById('ohara');
         ifr.addEventListener('load', () => {{
           const l = document.getElementById('loader');
@@ -54,8 +56,7 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72):
           }}
         }});
       </script>
-    """, height=100)
-
+    """, height=1040)
 
 def embed_cropped(url: str, hide_px: int = 56, height: int = 720, title: str | None = None):
     """Embed iframe dengan 'crop' area atas setinggi hide_px (untuk menyamarkan header)."""

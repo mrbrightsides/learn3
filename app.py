@@ -27,6 +27,10 @@ OHARA_APPS = {
     "Smart Contract Studio": {
         "url": "https://ohara.ai/mini-apps/a39d830d-0696-4eec-a884-e47ed1027e4e?utm_source=learn3",
         "title": "⚒️ Smart Contract Studio"
+    },
+    "Gas & Performance": {
+        "url": "https://ohara.ai/mini-apps/e33686f2-bdec-4043-b683-0fd4507979b2?utm_source=learn3",
+        "title": "⚡ Gas & Performance"
     }
 }
 
@@ -315,15 +319,10 @@ with tabs[5]:
     app = OHARA_APPS["Smart Contract Studio"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 6: Event Islam ===
+# === Tab 6: Gas & Performance (iframe ke Ohara) ===
 with tabs[6]:
-    try:
-        from components.event import render_event
-        render_event()
-    except Exception as e:
-        st.warning(f"Gagal memuat kalender lengkap: {e}. Menampilkan kalender sederhana.")
-        from components.event import render_simple_hijri_calendar
-        render_simple_hijri_calendar()
+    app = OHARA_APPS["Gas & Performance"]
+    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 7: KhutbahGPT ===
 with tabs[7]:

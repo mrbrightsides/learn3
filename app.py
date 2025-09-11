@@ -35,6 +35,10 @@ OHARA_APPS = {
     "Audit Security": {
         "url": "https://ohara.ai/mini-apps/0c47e8dd-0310-4bf6-8e02-c97612856385?utm_source=learn3",
         "title": "🔐 Audit Security"
+    },
+    "Web3 Lab": {
+        "url": "https://ohara.ai/mini-apps/6a9f756b-573c-442c-9544-792660d7a86a?utm_source=learn3",
+        "title": "🔗 Web3 Lab"
     }
 }
 
@@ -97,9 +101,6 @@ from components.waktu_sholat import (
     TZ, METHODS, fetch_timings_by_city, parse_today_times,
     to_local_datetime, next_prayer, fmt_delta
 )
-
-# ===== Komponen: Live TV =====
-from components.live_tv import render_live_tv_tab
 
 # ===== Komponen: Chat Ustadz =====
 from components.chat_ustadz import show_chat_ustadz_tab
@@ -328,9 +329,10 @@ with tabs[7]:
     app = OHARA_APPS["Audit Security"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 8: Live TV ===
+# === Tab 8: Web3 Lab (iframe ke Ohara) ===
 with tabs[8]:
-    render_live_tv_tab()
+    app = OHARA_APPS["Web3 Lab"]
+    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 9: Chat Ustadz ===
 with tabs[9]:

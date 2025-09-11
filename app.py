@@ -7,6 +7,40 @@ import pandas as pd
 import streamlit as st
 from streamlit.components.v1 import iframe
 
+import streamlit as st
+import streamlit.components.v1 as components
+
+# ==== Ohara Miniapps ====
+OHARA_APPS = {
+    "Token Lab": {
+        "url": "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec?utm_source=learn3",
+        "title": "🪙 Token Lab"
+    }
+}
+
+def embed_lab(url, title=""):
+    st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
+    components.html(f"""
+      <div id="wrap" style="width:100%;height:100vh;position:relative;">
+        <div id="loader" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:600;opacity:.6">
+          Loading module…
+        </div>
+        <iframe id="ohara" src="{url}"
+          style="width:100%;height:100%;border:0;border-radius:12px;overflow:hidden"></iframe>
+      </div>
+      <script>
+        const h = () => {{
+          const vh = window.innerHeight || document.documentElement.clientHeight;
+          document.getElementById('wrap').style.height = (vh - 16) + 'px';
+        }};
+        window.addEventListener('resize', h); h();
+        const ifr = document.getElementById('ohara');
+        ifr.addEventListener('load', () => {{
+          const l = document.getElementById('loader'); if(l) l.style.display='none';
+        }});
+      </script>
+    """, height=720)
+
 if st.query_params.get("ping") == "1":
     st.write("ok"); st.stop()
 
@@ -236,10 +270,8 @@ with tabs[1]:
 
 # === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
-    st.markdown("### 🪙 Token Lab")
-    ohara_url = "https://ohara.ai/mini-apps/13b468ca-644e-4736-b06f-2141861901ec"
-    st.components.v1.iframe(ohara_url, height=800, scrolling=True)
-
+    app = OHARA_APPS["Token Lab"]
+    embed_lab(app["url"], app["title"])
 
 # === Tab 3: Quran ===
 with tabs[3]:

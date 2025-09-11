@@ -21,31 +21,25 @@ OHARA_APPS = {
 import streamlit as st
 import streamlit.components.v1 as components
 
-def embed_lab(url: str, title: str = "", hide_px: int = 72, height_px: int = 1040):
+def embed_lab(url: str, title: str = "", hide_px: int = 72):
     st.markdown(f"<h3>{title}</h3>", unsafe_allow_html=True)
 
     components.html(f"""
-      <div id="wrap" style="position:relative;width:100%;overflow:hidden;border-radius:12px;">
+      <div id="wrap" style="position:relative;width:100%;height:100vh;overflow:hidden;border-radius:12px;">
         <div id="loader"
              style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
                     font-weight:600;opacity:.6;transition:opacity .3s ease">
           Loading module…
         </div>
 
+        <!-- iframe full viewport -->
         <iframe id="ohara" src="{url}"
           style="position:absolute; top:-{hide_px}px; left:0;
-                 width:100%; height:calc(100% + {hide_px}px);
+                 width:100%; height:calc(100vh + {hide_px}px);
                  border:0; border-radius:12px; overflow:hidden"></iframe>
       </div>
 
       <script>
-        // Fit tinggi wrapper ke viewport (minus margin kecil)
-        const fit = () => {{
-          const vh = window.innerHeight || document.documentElement.clientHeight;
-          document.getElementById('wrap').style.height = (vh - 16) + 'px';
-        }};
-        window.addEventListener('resize', fit); fit();
-
         // Loader fade-out saat iframe ready
         const ifr = document.getElementById('ohara');
         ifr.addEventListener('load', () => {{
@@ -56,8 +50,8 @@ def embed_lab(url: str, title: str = "", hide_px: int = 72, height_px: int = 104
           }}
         }});
       </script>
-    """, height=1040)
-
+    """, height=1080)
+    
 def embed_cropped(url: str, hide_px: int = 56, height: int = 720, title: str | None = None):
     """Embed iframe dengan 'crop' area atas setinggi hide_px (untuk menyamarkan header)."""
     if title:

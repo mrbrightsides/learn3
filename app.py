@@ -15,6 +15,10 @@ OHARA_APPS = {
     "Token Lab": {
         "url": "https://ohara.ai/mini-apps/9df6217d-da52-4ca1-bd3e-6fb5c6bdb981?utm_source=learn3",
         "title": "🧪 Token Lab"
+    },
+    "DAO Sandbox": {
+        "url": "https://ohara.ai/mini-apps/1c2a4db3-203b-4a53-9f71-411b1b8237c5?utm_source=learn3",
+        "title": "🗳 DAO Sandbox"
     }
 }
 
@@ -77,9 +81,6 @@ from components.waktu_sholat import (
     TZ, METHODS, fetch_timings_by_city, parse_today_times,
     to_local_datetime, next_prayer, fmt_delta
 )
-
-# ===== Komponen: Quran =====
-from components.quran import render_quran_tab
 
 # ===== Komponen: Zakat =====
 from components.zakat import (
@@ -302,9 +303,10 @@ with tabs[2]:
     app = OHARA_APPS["Token Lab"]
     embed_lab(app["url"], app["title"], hide_px=100)
 
-# === Tab 3: Quran ===
-with tabs[3]:
-    render_quran_tab()
+# === Tab 3: DAO Sandbox (iframe ke Ohara) ===
+with tabs[2]:
+    app = OHARA_APPS["DAO Sandbox"]
+    embed_lab(app["url"], app["title"], hide_px=100)
 
 # === Tab 4: Kalkulator Zakat ===
 with tabs[4]:

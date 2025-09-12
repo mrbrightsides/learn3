@@ -201,6 +201,9 @@ with col2:
     st.markdown("""
         ## Chat. Code. Chained. Certified — Your Web3 Journey Starts Here
     """)
+st.markdown("""
+        > Untuk tampilan dan pengalaman belajar yang lebih baik, disarankan untuk menggunakan browser di laptop atau PC
+    """)
 
 # ===== Tab utama =====
 tabs = st.tabs([

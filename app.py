@@ -202,7 +202,7 @@ with col2:
         ## Chat. Code. Chained. Certified — Your Web3 Journey Starts Here
     """)
 st.markdown("""
-        > Untuk tampilan dan pengalaman belajar yang lebih baik, disarankan untuk menggunakan browser di laptop atau PC
+        > 💡 Untuk tampilan dan pengalaman belajar yang optimal, disarankan menggunakan browser pada laptop atau PC untuk mengakses Learn3
     """)
 
 # ===== Tab utama =====

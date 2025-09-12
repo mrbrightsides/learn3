@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Build](https://img.shields.io/badge/build-passing-blue)
-![Docs](https://img.shields.io/badge/docs-available-orange)
+[![Docs](https://img.shields.io/badge/docs-available-orange)](https://learn3showcase.vercel.app/)
 
 **Learn3** adalah platform edukasi interaktif untuk memahami **Blockchain & Web3** secara bertahap (Beginner → Intermediate → Advanced).  
 Didesain sebagai **AI-powered learning gateway**, Learn3 menggabungkan:  

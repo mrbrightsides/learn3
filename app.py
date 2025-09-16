@@ -164,13 +164,17 @@ with st.sidebar:
     Untuk mengeklaim Badge, sebaiknya masukkan nama asli disertai dengan email yang valid saaat mengisi nama peserta quiz.
 
     ---
-    ### 🧩 STC Ecosystem
+    ### 🧩 RANTAI Ecosystem
     1. [STC Analytics](https://stc-analytics.streamlit.app/)
     2. [STC GasVision](https://stc-gasvision.streamlit.app/)
     3. [STC Converter](https://stc-converter.streamlit.app/)
     4. [STC Bench](https://stc-bench.streamlit.app/)
     5. [STC Insight](https://stc-insight.streamlit.app/)
     6. [STC Plugin](https://smartourism.elpeef.com/)
+    7. [SmartFaith](https://smartfaith.streamlit.app/)
+    8. [DataHub](https://stc-data.streamlit.app/)
+    9. [Nexus](https://rantai-nexus.streamlit.app/)
+    10. [BlockPedia](https://blockpedia.streamlit.app/)
 
     ---
     #### 🙌 Dukungan & kontributor

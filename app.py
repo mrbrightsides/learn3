@@ -374,4 +374,4 @@ with tabs[8]:
 # === Tab 9: Certification (iframe ke Ohara) ===
 with tabs[9]:
     app = OHARA_APPS["Certification"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 50)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 15)

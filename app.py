@@ -226,7 +226,7 @@ with st.sidebar:
     2. [Computational Analytics Studio](https://komnumlab.streamlit.app/)
     3. [BlockPedia](https://blockpedia.streamlit.app/)
     4. [Learn3](https://learn3.streamlit.app/)
-    5. [LearnPy](https://learnpy.streamlit.app/)
+    5. [LearnPy](https://rantai-learnpy.streamlit.app/)
 
     🌐 Net → “Connect the chain”
     1. [SmartFaith](https://smartfaith.streamlit.app/)

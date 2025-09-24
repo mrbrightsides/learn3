@@ -147,7 +147,7 @@ flowchart LR
 ---
 
 ## 🔗 Integrasi STC (Soft Branding)
-Learn3 menyelipkan **STC Ecosystem** sebagai **case study nyata**, tanpa hard-selling:  
+Learn3 menyelipkan **STC Ecosystem** sebagai **case study nyata**:  
 - **Beginner** → contoh token & NFT menggunakan *STC Token* (testnet).  
 - **Intermediate** → praktik DAO & benchmarking → *STC Bench*, *STC Converter*.  
 - **Advanced** → security & gas optimization → *STC GasVision*, *STC Analytics*.

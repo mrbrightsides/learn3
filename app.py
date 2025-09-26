@@ -344,44 +344,44 @@ with tabs[0]:
 # === Tab 1: Blockchain 101 (iframe ke Ohara) ===
 with tabs[1]:
     app = OHARA_APPS["Blockchain 101"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 2: Token Lab (iframe ke Ohara) ===
 with tabs[2]:
     app = OHARA_APPS["Token Lab"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 3: DAO Sandbox (iframe ke Ohara) ===
 with tabs[3]:
     app = OHARA_APPS["DAO Sandbox"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 4: DeFi Workshop (iframe ke Ohara) ===
 with tabs[4]:
     app = OHARA_APPS["DeFi Workshop"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 5: Smart Contract Studio (iframe ke Ohara) ===
 with tabs[5]:
     app = OHARA_APPS["Smart Contract Studio"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 6: Gas & Performance (iframe ke Ohara) ===
 with tabs[6]:
     app = OHARA_APPS["Gas & Performance"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
     
 # === Tab 7: Audit Security (iframe ke Ohara) ===
 with tabs[7]:
     app = OHARA_APPS["Audit Security"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 8: Web3 Lab (iframe ke Ohara) ===
 with tabs[8]:
     app = OHARA_APPS["Web3 Lab"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
 
 # === Tab 9: Certification (iframe ke Ohara) ===
 with tabs[9]:
     app = OHARA_APPS["Certification"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 10)
+    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)

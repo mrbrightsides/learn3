@@ -10,42 +10,42 @@ from streamlit.components.v1 import iframe
 import streamlit as st
 import streamlit.components.v1 as components
 
-# ==== Ohara Miniapps ====
-OHARA_APPS = {
+# ==== ELPEEF Miniapps ====
+ELPEEF_APPS = {
     "Blockchain 101": {
-        "url": "https://ohara.ai/mini-apps/c3f9e7ad-c9a7-4b44-8d9e-742fd117f5e6?utm_source=learn3",
+        "url": "https://blockchain101.elpeef.com/?utm_source=learn3",
         "title": "📖 Blockchain 101"
     },
     "Token Lab": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffpcnl10o678nlkgegfgpmn?utm_source=learn3",
+        "url": "https://tokenlab.elpeef.com/?utm_source=learn3",
         "title": "🧪 Token Lab"
     },
     "DAO Sandbox": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffptu29011cb3lkcmx6h3co?utm_source=learn3",
+        "url": "https://daosandbox.elpeef.com/?utm_source=learn3",
         "title": "🗳 DAO Sandbox"
     },
     "DeFi Workshop": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffqhjpu0173b3lkbvhh7arq?utm_source=learn3",
+        "url": "https://defiworkshop.elpeef.com/?utm_source=learn3",
         "title": "💱 DeFi Workshop"
     },
     "Smart Contract Studio": {
-        "url": "https://ohara.ai/mini-apps/miniapp_cmffs5rj50oz18nlk6ogi2lmp?utm_source=learn3",
+        "url": "https://smartcontractstudio.elpeef.com/?utm_source=learn3",
         "title": "⚒️ Smart Contract Studio"
     },
     "Gas & Performance": {
-        "url": "https://ohara.ai/mini-apps/e33686f2-bdec-4043-b683-0fd4507979b2?utm_source=learn3",
+        "url": "https://gasperformance.elpeef.com/?utm_source=learn3",
         "title": "⚡ Gas & Performance"
     },
     "Audit Security": {
-        "url": "https://ohara.ai/mini-apps/0c47e8dd-0310-4bf6-8e02-c97612856385?utm_source=learn3",
+        "url": "https://auditsecurity.elpeef.com/?utm_source=learn3",
         "title": "🔐 Audit Security"
     },
     "Web3 Lab": {
-        "url": "https://ohara.ai/mini-apps/6a9f756b-573c-442c-9544-792660d7a86a?utm_source=learn3",
+        "url": "https://web3lab.elpeef.com/?utm_source=learn3",
         "title": "🔗 Web3 Lab"
     },
     "Certification": {
-        "url": "https://ohara.ai/mini-apps/e86a5136-f96f-4d52-af61-8de234ed7686?utm_source=learn3",
+        "url": "https://certlearn3.elpeef.com/?utm_source=learn3",
         "title": "🎓 Certification"
     }
 }
@@ -115,13 +115,13 @@ def embed_lab(url, title="", hide_top=72, hide_bottom=0, height=720):
                     font-weight:600;opacity:.6;transition:opacity .3s ease">
           Loading module…
         </div>
-        <iframe id="ohara" src="{url}"
+        <iframe id="ELPEEF" src="{url}"
           style="position:absolute; top:{top_offset}px; left:0;
                  width:100%; height:{iframe_height}px;
                  border:0; border-radius:12px; overflow:hidden"></iframe>
       </div>
       <script>
-        const ifr = document.getElementById('ohara');
+        const ifr = document.getElementById('ELPEEF');
         ifr.addEventListener('load', () => {{
           const l = document.getElementById('loader');
           if (l) {{
@@ -216,7 +216,7 @@ with st.sidebar:
 # ===== Page setup =====
 st.set_page_config(
     page_title="Learn3",
-    page_icon="🚀",
+    page_icon="🌐",
     layout="wide"
 )
 
@@ -297,47 +297,47 @@ with tabs[0]:
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)
 
-# === Tab 1: Blockchain 101 (iframe ke Ohara) ===
+# === Tab 1: Blockchain 101 (iframe ke ELPEEF) ===
 with tabs[1]:
-    app = OHARA_APPS["Blockchain 101"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Blockchain 101"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
-# === Tab 2: Token Lab (iframe ke Ohara) ===
+# === Tab 2: Token Lab (iframe ke ELPEEF) ===
 with tabs[2]:
-    app = OHARA_APPS["Token Lab"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Token Lab"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
-# === Tab 3: DAO Sandbox (iframe ke Ohara) ===
+# === Tab 3: DAO Sandbox (iframe ke ELPEEF) ===
 with tabs[3]:
-    app = OHARA_APPS["DAO Sandbox"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["DAO Sandbox"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
-# === Tab 4: DeFi Workshop (iframe ke Ohara) ===
+# === Tab 4: DeFi Workshop (iframe ke ELPEEF) ===
 with tabs[4]:
-    app = OHARA_APPS["DeFi Workshop"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["DeFi Workshop"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
-# === Tab 5: Smart Contract Studio (iframe ke Ohara) ===
+# === Tab 5: Smart Contract Studio (iframe ke ELPEEF) ===
 with tabs[5]:
-    app = OHARA_APPS["Smart Contract Studio"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Smart Contract Studio"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
-# === Tab 6: Gas & Performance (iframe ke Ohara) ===
+# === Tab 6: Gas & Performance (iframe ke ELPEEF) ===
 with tabs[6]:
-    app = OHARA_APPS["Gas & Performance"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Gas & Performance"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
     
-# === Tab 7: Audit Security (iframe ke Ohara) ===
+# === Tab 7: Audit Security (iframe ke ELPEEF) ===
 with tabs[7]:
-    app = OHARA_APPS["Audit Security"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Audit Security"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
-# === Tab 8: Web3 Lab (iframe ke Ohara) ===
+# === Tab 8: Web3 Lab (iframe ke ELPEEF) ===
 with tabs[8]:
-    app = OHARA_APPS["Web3 Lab"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Web3 Lab"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
 
-# === Tab 9: Certification (iframe ke Ohara) ===
+# === Tab 9: Certification (iframe ke ELPEEF) ===
 with tabs[9]:
-    app = OHARA_APPS["Certification"]
-    embed_lab(app["url"], app["title"], hide_top=110, hide_bottom = 12)
+    app = ELPEEF_APPS["Certification"]
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)

@@ -300,44 +300,44 @@ with tabs[0]:
 # === Tab 1: Blockchain 101 (iframe ke ELPEEF) ===
 with tabs[1]:
     app = ELPEEF_APPS["Blockchain 101"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
     
 # === Tab 2: Token Lab (iframe ke ELPEEF) ===
 with tabs[2]:
     app = ELPEEF_APPS["Token Lab"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
 
 # === Tab 3: DAO Sandbox (iframe ke ELPEEF) ===
 with tabs[3]:
     app = ELPEEF_APPS["DAO Sandbox"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
     
 # === Tab 4: DeFi Workshop (iframe ke ELPEEF) ===
 with tabs[4]:
     app = ELPEEF_APPS["DeFi Workshop"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
 
 # === Tab 5: Smart Contract Studio (iframe ke ELPEEF) ===
 with tabs[5]:
     app = ELPEEF_APPS["Smart Contract Studio"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
     
 # === Tab 6: Gas & Performance (iframe ke ELPEEF) ===
 with tabs[6]:
     app = ELPEEF_APPS["Gas & Performance"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
     
 # === Tab 7: Audit Security (iframe ke ELPEEF) ===
 with tabs[7]:
     app = ELPEEF_APPS["Audit Security"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
 
 # === Tab 8: Web3 Lab (iframe ke ELPEEF) ===
 with tabs[8]:
     app = ELPEEF_APPS["Web3 Lab"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)
 
 # === Tab 9: Certification (iframe ke ELPEEF) ===
 with tabs[9]:
     app = ELPEEF_APPS["Certification"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -5)

@@ -330,7 +330,7 @@ with tabs[6]:
 # === Tab 7: Audit Security (iframe ke ELPEEF) ===
 with tabs[7]:
     app = ELPEEF_APPS["Audit Security"]
-    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = -25)
+    embed_lab(app["url"], app["title"], hide_top=0, hide_bottom = 10)
 
 # === Tab 8: Web3 Lab (iframe ke ELPEEF) ===
 with tabs[8]:

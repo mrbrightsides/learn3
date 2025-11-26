@@ -287,7 +287,12 @@ with tabs[0]:
     st.write(f"💬 Chat aktif: **{widget_opt}**")
     st.caption("Jika area kosong, kemungkinan dibatasi oleh CSP/X-Frame-Options dari penyedia.")
     
-    
+    if widget_opt == "BlockChat":
+        # Botsonic: sembunyikan header atas dengan crop ~56px (atur sesuai kebutuhan)
+        embed_cropped(final_url, hide_px=56, height=720, title=None)
+    else:
+        # Widget lain tetap pakai iframe standar
+        iframe(src=final_url, height=720)
     
     if st.button(f"🔗 Klik disini jika ingin menampilkan halaman chat {widget_opt} dengan lebih baik"):
         st.markdown(f"""<meta http-equiv="refresh" content="0; url={chosen_url}">""", unsafe_allow_html=True)

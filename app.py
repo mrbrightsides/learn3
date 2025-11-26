@@ -289,7 +289,7 @@ with tabs[0]:
     
     if widget_opt == "BlockChat":
         # Botsonic: sembunyikan header atas dengan crop ~56px (atur sesuai kebutuhan)
-        embed_cropped(final_url, hide_px=56, height=720, title=None)
+        embed_cropped(final_url, hide_px=50, height=720, title=None)
     else:
         # Widget lain tetap pakai iframe standar
         iframe(src=final_url, height=720)
